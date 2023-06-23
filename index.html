@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iCoder | Technology</title>
+  <!-- BootStrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- BootStrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+    2></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">iCoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Support</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Write for Us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-light" type="submit">
+            Search
+          </button>
+        </form>
+        <div class="mx-2"></div>
+        <button class="btn btn-danger ms-1 me-3" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupmodal">SignUp</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="loginmodalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Login to iCoder</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div id="passwordHelpBlock" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+          <div id="passwordHelpBlock" class="form-text">
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
+            special
+            characters, or emoji.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SignUp Modal -->
+  <div class="modal fade" id="signupmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="signupmodalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Get an iCoder Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div id="passwordHelpBlock" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+          <label for="inputPassword5" class="form-label">Confirm Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="c2.jpg" class="d-block w-100" style="background: rgba(0,0,0,0.6);" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to iCoder</h2>
+          <p>Technology, News and Latest Trends</p>
+          <buttoon class="btn btn-danger">Web Development</buttoon>
+          <buttoon class="btn btn-primary">App Development</buttoon>
+          <buttoon class="btn btn-success">Technology</buttoon>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="c1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Second slide label</h2>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="c3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Third slide label</h2>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Small Cards -->
+  <div id="small_cards" class="row mb-2 my-5 mx-5">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger-emphasis">SEO</strong>
+          <h3 class="mb-0">Designing for Conversions: Strategies to Boost Website Performance</h3>
+          <div class="mb-1 text-body-secondary">June 20</div>
+          <p class="card-text mb-auto">Designing is a creative process that involves conceptualizing and visualizing
+            solutions for various problems. </p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="t1.jpg" class="bd-placeholder-img img-fluid" width="200" height="285" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-warning-emphasis">Web Development</strong>
+          <h3 class="mb-0">Responsive Web Design: Adapting to the Mobile World</h3>
+          <div class="mb-1 text-body-secondary">June 21</div>
+          <p class="card-text mb-auto">Designing is a creative process that involves conceptualizing and visualizing
+            solutions for various problems. </p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="t2.jpg" class="bd-placeholder-img img-fluid" width="200" height="285" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-secondary-emphasis">Development</strong>
+          <h3 class="mb-0">Color Psychology in Web Design: Influencing User Perception</h3>
+          <div class="mb-1 text-body-secondary">June 22</div>
+          <p class="card-text mb-auto">Designing is a creative process that involves conceptualizing and visualizing
+            solutions for various problems. </p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="t3.jpg" class="bd-placeholder-img img-fluid" width="200" height="285" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">UI/UX</strong>
+          <h3 class="mb-0">Simplifying User Interfaces: The Key to Intuitive Web Design</h3>
+          <div class="mb-1 text-body-secondary">June 23</div>
+          <p class="card-text mb-auto">Designing is a creative process that involves conceptualizing and visualizing
+            solutions for various problems. </p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="t4.jpg" class="bd-placeholder-img img-fluid" width="200" height="285" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mx-5 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2023 iCoder, Inc</p>
+
+    <a href="/"
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Terms</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
